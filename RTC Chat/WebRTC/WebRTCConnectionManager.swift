@@ -19,6 +19,7 @@ public class WebRTCConnectionManager: NSObject {
     private let _statusSource = PublishSubject<String>()
 
     private var _connection: RTCPeerConnection?
+    private var _dataChannel: RTCDataChannel?
     
     lazy var defaultConstraints: RTCMediaConstraints = {
         let constraints = [
@@ -179,6 +180,22 @@ public class WebRTCConnectionManager: NSObject {
         return self._signallingAdapter.sendCandidate(data)
     }
     
+    private func sendText(_ text: String) -> Completable {
+        return Completable.create(subscribe: { completable in
+            if let dataChannel = self._dataChannel, let data = text.data(using: .utf8) {
+                let buffer = RTCDataBuffer(data: data, isBinary: true)
+                if (dataChannel.sendData(buffer)) {
+                    completable(.completed)
+                } else {
+                    completable(.error(RTCError.FailedToSendData))
+                }
+            } else {
+                completable(.error(RTCError.DataChannelIsNil))
+            }
+            return Disposables.create()
+        })
+    }
+
     // MARK: - Listening
 
     private func listenForRemoteOffers(connection: RTCPeerConnection) {
@@ -335,7 +352,8 @@ extension WebRTCConnectionManager: RTCPeerConnectionDelegate {
 
     public func peerConnection(_ peerConnection: RTCPeerConnection, didOpen dataChannel: RTCDataChannel) {
         self.updateStatus("Opened new data channel")
-        dataChannel.delegate = self
+        self._dataChannel = dataChannel
+        self._dataChannel?.delegate = self
     }
 
 }
@@ -357,7 +375,8 @@ extension WebRTCConnectionManager: RTCDataChannelDelegate {
     }
 
     public func dataChannel(_ dataChannel: RTCDataChannel, didReceiveMessageWith buffer: RTCDataBuffer) {
-        self.updateStatus("Data channel received message with buffer")
+        let text = String.init(data: buffer.data, encoding: .utf8)
+        self.updateStatus("Data channel received message with message: \(text!)")
     }
 
 }
