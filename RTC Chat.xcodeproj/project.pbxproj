@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B127FD04212B4387009020BF /* RTCStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B127FD03212B4387009020BF /* RTCStatus.swift */; };
+		B13AAC3220D40660006DBE99 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13AAC3120D40660006DBE99 /* ExampleViewController.swift */; };
+		B13AAC3420D426DB006DBE99 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13AAC3320D426DB006DBE99 /* CallViewController.swift */; };
+		B14262EF20D1B39400ABF07E /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14262EE20D1B39400ABF07E /* Paths.swift */; };
+		B14262F920D2AB5700ABF07E /* SignallingAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14262F520D2AB5700ABF07E /* SignallingAdapter.swift */; };
+		B14262FA20D2AB5700ABF07E /* FirebaseSignallingAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14262F620D2AB5700ABF07E /* FirebaseSignallingAdapter.swift */; };
+		B14262FB20D2AB5700ABF07E /* WebRTCConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14262F720D2AB5700ABF07E /* WebRTCConnectionManager.swift */; };
+		B14262FC20D2AB5700ABF07E /* WebRTCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14262F820D2AB5700ABF07E /* WebRTCManager.swift */; };
+		B14262FE20D2ABD500ABF07E /* RTCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14262FD20D2ABD500ABF07E /* RTCError.swift */; };
+		B1644B1920D047CE00B6F097 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1644B1820D047CE00B6F097 /* AppDelegate.swift */; };
+		B1644B1B20D047CE00B6F097 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1644B1A20D047CE00B6F097 /* ViewController.swift */; };
+		B1644B1E20D047CE00B6F097 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1644B1C20D047CE00B6F097 /* Main.storyboard */; };
+		B1644B2020D047CF00B6F097 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1644B1F20D047CF00B6F097 /* Assets.xcassets */; };
+		B1644B2320D047CF00B6F097 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1644B2120D047CF00B6F097 /* LaunchScreen.storyboard */; };
+		B1FDF28A20D1869F00C4517E /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1644B2A20D047ED00B6F097 /* WebRTC.framework */; };
+		B1FDF28B20D1869F00C4517E /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B1644B2A20D047ED00B6F097 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B1FDF28E20D1934300C4517E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1FDF28D20D1934300C4517E /* GoogleService-Info.plist */; };
+		F49E4FE9C98A2836D2C225EB /* Pods_RTC_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E866F9CF4480B397D5FEFEE /* Pods_RTC_Chat.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B1FDF28C20D1869F00C4517E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B1FDF28B20D1869F00C4517E /* WebRTC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0E866F9CF4480B397D5FEFEE /* Pods_RTC_Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTC_Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		632D682A5AE36FFA38BCB57C /* Pods-RTC Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTC Chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-RTC Chat/Pods-RTC Chat.release.xcconfig"; sourceTree = "<group>"; };
+		B127FD03212B4387009020BF /* RTCStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTCStatus.swift; sourceTree = "<group>"; };
+		B13AAC3120D40660006DBE99 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
+		B13AAC3320D426DB006DBE99 /* CallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
+		B14262EE20D1B39400ABF07E /* Paths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
+		B14262F520D2AB5700ABF07E /* SignallingAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignallingAdapter.swift; sourceTree = "<group>"; };
+		B14262F620D2AB5700ABF07E /* FirebaseSignallingAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseSignallingAdapter.swift; sourceTree = "<group>"; };
+		B14262F720D2AB5700ABF07E /* WebRTCConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebRTCConnectionManager.swift; sourceTree = "<group>"; };
+		B14262F820D2AB5700ABF07E /* WebRTCManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebRTCManager.swift; sourceTree = "<group>"; };
+		B14262FD20D2ABD500ABF07E /* RTCError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTCError.swift; sourceTree = "<group>"; };
+		B1644B1520D047CE00B6F097 /* RTC Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RTC Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1644B1820D047CE00B6F097 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B1644B1A20D047CE00B6F097 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B1644B1D20D047CE00B6F097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B1644B1F20D047CF00B6F097 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1644B2220D047CF00B6F097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B1644B2420D047CF00B6F097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1644B2A20D047ED00B6F097 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
+		B1FDF28D20D1934300C4517E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DB39C1068DE4621F5E5ECB79 /* Pods-RTC Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTC Chat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RTC Chat/Pods-RTC Chat.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1644B1220D047CE00B6F097 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1FDF28A20D1869F00C4517E /* WebRTC.framework in Frameworks */,
+				F49E4FE9C98A2836D2C225EB /* Pods_RTC_Chat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8EB87D91DF8F583C4AAFEA76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB39C1068DE4621F5E5ECB79 /* Pods-RTC Chat.debug.xcconfig */,
+				632D682A5AE36FFA38BCB57C /* Pods-RTC Chat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B14262F420D2AB5700ABF07E /* WebRTC */ = {
+			isa = PBXGroup;
+			children = (
+				B14262F520D2AB5700ABF07E /* SignallingAdapter.swift */,
+				B14262F620D2AB5700ABF07E /* FirebaseSignallingAdapter.swift */,
+				B14262F720D2AB5700ABF07E /* WebRTCConnectionManager.swift */,
+				B14262F820D2AB5700ABF07E /* WebRTCManager.swift */,
+				B14262FD20D2ABD500ABF07E /* RTCError.swift */,
+				B127FD03212B4387009020BF /* RTCStatus.swift */,
+			);
+			path = WebRTC;
+			sourceTree = "<group>";
+		};
+		B1644B0C20D047CE00B6F097 = {
+			isa = PBXGroup;
+			children = (
+				B1FDF28920D1865D00C4517E /* Frameworks */,
+				B1644B1720D047CE00B6F097 /* RTC Chat */,
+				B1644B1620D047CE00B6F097 /* Products */,
+				8EB87D91DF8F583C4AAFEA76 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		B1644B1620D047CE00B6F097 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1644B1520D047CE00B6F097 /* RTC Chat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1644B1720D047CE00B6F097 /* RTC Chat */ = {
+			isa = PBXGroup;
+			children = (
+				B14262F420D2AB5700ABF07E /* WebRTC */,
+				B1644B1820D047CE00B6F097 /* AppDelegate.swift */,
+				B1644B1A20D047CE00B6F097 /* ViewController.swift */,
+				B13AAC3320D426DB006DBE99 /* CallViewController.swift */,
+				B13AAC3120D40660006DBE99 /* ExampleViewController.swift */,
+				B14262EE20D1B39400ABF07E /* Paths.swift */,
+				B1644B1C20D047CE00B6F097 /* Main.storyboard */,
+				B1644B1F20D047CF00B6F097 /* Assets.xcassets */,
+				B1644B2120D047CF00B6F097 /* LaunchScreen.storyboard */,
+				B1644B2420D047CF00B6F097 /* Info.plist */,
+				B1FDF28D20D1934300C4517E /* GoogleService-Info.plist */,
+			);
+			path = "RTC Chat";
+			sourceTree = "<group>";
+		};
+		B1FDF28920D1865D00C4517E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1644B2A20D047ED00B6F097 /* WebRTC.framework */,
+				0E866F9CF4480B397D5FEFEE /* Pods_RTC_Chat.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1644B1420D047CE00B6F097 /* RTC Chat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1644B2720D047CF00B6F097 /* Build configuration list for PBXNativeTarget "RTC Chat" */;
+			buildPhases = (
+				B9E30AF0E999653827B96777 /* [CP] Check Pods Manifest.lock */,
+				B1644B1120D047CE00B6F097 /* Sources */,
+				B1644B1220D047CE00B6F097 /* Frameworks */,
+				B1644B1320D047CE00B6F097 /* Resources */,
+				B1FDF28C20D1869F00C4517E /* Embed Frameworks */,
+				4A5E32679D88D23239009D9E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RTC Chat";
+			productName = "RTC Chat";
+			productReference = B1644B1520D047CE00B6F097 /* RTC Chat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1644B0D20D047CE00B6F097 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Pepe Becker";
+				TargetAttributes = {
+					B1644B1420D047CE00B6F097 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = B1644B1020D047CE00B6F097 /* Build configuration list for PBXProject "RTC Chat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1644B0C20D047CE00B6F097;
+			productRefGroup = B1644B1620D047CE00B6F097 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1644B1420D047CE00B6F097 /* RTC Chat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1644B1320D047CE00B6F097 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1644B2320D047CF00B6F097 /* LaunchScreen.storyboard in Resources */,
+				B1FDF28E20D1934300C4517E /* GoogleService-Info.plist in Resources */,
+				B1644B2020D047CF00B6F097 /* Assets.xcassets in Resources */,
+				B1644B1E20D047CE00B6F097 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A5E32679D88D23239009D9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RTC Chat/Pods-RTC Chat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RTC Chat/Pods-RTC Chat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9E30AF0E999653827B96777 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RTC Chat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1644B1120D047CE00B6F097 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B127FD04212B4387009020BF /* RTCStatus.swift in Sources */,
+				B13AAC3420D426DB006DBE99 /* CallViewController.swift in Sources */,
+				B14262FC20D2AB5700ABF07E /* WebRTCManager.swift in Sources */,
+				B14262F920D2AB5700ABF07E /* SignallingAdapter.swift in Sources */,
+				B14262FA20D2AB5700ABF07E /* FirebaseSignallingAdapter.swift in Sources */,
+				B14262FB20D2AB5700ABF07E /* WebRTCConnectionManager.swift in Sources */,
+				B1644B1B20D047CE00B6F097 /* ViewController.swift in Sources */,
+				B14262EF20D1B39400ABF07E /* Paths.swift in Sources */,
+				B1644B1920D047CE00B6F097 /* AppDelegate.swift in Sources */,
+				B14262FE20D2ABD500ABF07E /* RTCError.swift in Sources */,
+				B13AAC3220D40660006DBE99 /* ExampleViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B1644B1C20D047CE00B6F097 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1644B1D20D047CE00B6F097 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B1644B2120D047CF00B6F097 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1644B2220D047CF00B6F097 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1644B2520D047CF00B6F097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B1644B2620D047CF00B6F097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1644B2820D047CF00B6F097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB39C1068DE4621F5E5ECB79 /* Pods-RTC Chat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2US48SD2C3;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "RTC Chat/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pepebecker.RTC-Chat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1644B2920D047CF00B6F097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 632D682A5AE36FFA38BCB57C /* Pods-RTC Chat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2US48SD2C3;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "RTC Chat/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pepebecker.RTC-Chat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1644B1020D047CE00B6F097 /* Build configuration list for PBXProject "RTC Chat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1644B2520D047CF00B6F097 /* Debug */,
+				B1644B2620D047CF00B6F097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1644B2720D047CF00B6F097 /* Build configuration list for PBXNativeTarget "RTC Chat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1644B2820D047CF00B6F097 /* Debug */,
+				B1644B2920D047CF00B6F097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1644B0D20D047CE00B6F097 /* Project object */;
+}
